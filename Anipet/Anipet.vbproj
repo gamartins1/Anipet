@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05EE639F-AE52-4D70-B2FE-F2F2B68C14D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Anipet.My.MyApplication</StartupObject>
+    <RootNamespace>Anipet</RootNamespace>
+    <AssemblyName>Anipet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Anipet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Anipet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo-Petshop.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alterações\frmAlterarPrecoProduto.Designer.vb">
+      <DependentUpon>frmAlterarPrecoProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alterações\frmAlterarPrecoProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarAdministrador.Designer.vb">
+      <DependentUpon>frmCadastrarAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarAnimal.Designer.vb">
+      <DependentUpon>frmCadastrarAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarFornecedores.Designer.vb">
+      <DependentUpon>frmCadastrarFornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarFornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarProdutos.Designer.vb">
+      <DependentUpon>frmCadastrarProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroCliente.Designer.vb">
+      <DependentUpon>frmCadastroCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroFuncionario.Designer.vb">
+      <DependentUpon>frmCadastroFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmAdicionarProdutos.Designer.vb">
+      <DependentUpon>frmAdicionarProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmAdicionarProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterações\frmAlterarPrecoServico.Designer.vb">
+      <DependentUpon>frmAlterarPrecoServico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alterações\frmAlterarPrecoServico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarServico.Designer.vb">
+      <DependentUpon>frmCadastrarServico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastrarServico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmHistoricoAnimal.Designer.vb">
+      <DependentUpon>frmHistoricoAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmHistoricoAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmServicos.Designer.vb">
+      <DependentUpon>frmServicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmServicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaCliente.Designer.vb">
+      <DependentUpon>frmConsultaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaAnimal.Designer.vb">
+      <DependentUpon>frmConsultaAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaProduto.Designer.vb">
+      <DependentUpon>frmConsultaProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFornecedor.Designer.vb">
+      <DependentUpon>frmConsultaFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmRelatorios.Designer.vb">
+      <DependentUpon>frmRelatorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmRelatorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFuncionario.Designer.vb">
+      <DependentUpon>frmConsultaFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaAdministrador.Designer.vb">
+      <DependentUpon>frmConsultaAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principais\frmFuncionario.Designer.vb">
+      <DependentUpon>frmFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principais\frmFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmPrevisaoVencimentoProduto.Designer.vb">
+      <DependentUpon>frmPrevisaoVencimentoProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmPrevisaoVencimentoProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarServicosEmAndamento.Designer.vb">
+      <DependentUpon>frmPopUpBuscarServicosEmAndamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarServicosEmAndamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpVendasEmAberto.Designer.vb">
+      <DependentUpon>frmPopUpVendasEmAberto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpVendasEmAberto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principais\frmVendas.Designer.vb">
+      <DependentUpon>frmVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principais\frmVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principais\frmAdministrador.Designer.vb">
+      <DependentUpon>frmAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principais\frmAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principais\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principais\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmNovoServico.Designer.vb">
+      <DependentUpon>frmNovoServico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmNovoServico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarServicos.Designer.vb">
+      <DependentUpon>frmPopUpBuscarServicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarServicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarFuncionario.Designer.vb">
+      <DependentUpon>frmPopUpBuscarFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarProduto.Designer.vb">
+      <DependentUpon>frmPopUpBuscarProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarAnimal.Designer.vb">
+      <DependentUpon>frmPopUpBuscarAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscarAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscaFornecedor.Designer.vb">
+      <DependentUpon>frmPopUpBuscaFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscaFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscaCliente.Designer.vb">
+      <DependentUpon>frmPopUpBuscaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\frmPopUpBuscaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principais\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principais\frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloGeral.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes\RoundButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\RoundedButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alterações\frmAlterarPrecoProduto.resx">
+      <DependentUpon>frmAlterarPrecoProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastrarAdministrador.resx">
+      <DependentUpon>frmCadastrarAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastrarAnimal.resx">
+      <DependentUpon>frmCadastrarAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastrarFornecedores.resx">
+      <DependentUpon>frmCadastrarFornecedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastrarProdutos.resx">
+      <DependentUpon>frmCadastrarProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroCliente.resx">
+      <DependentUpon>frmCadastroCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroFuncionario.resx">
+      <DependentUpon>frmCadastroFuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmAdicionarProdutos.resx">
+      <DependentUpon>frmAdicionarProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterações\frmAlterarPrecoServico.resx">
+      <DependentUpon>frmAlterarPrecoServico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastrarServico.resx">
+      <DependentUpon>frmCadastrarServico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaAnimal.resx">
+      <DependentUpon>frmConsultaAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmHistoricoAnimal.resx">
+      <DependentUpon>frmHistoricoAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmServicos.resx">
+      <DependentUpon>frmServicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaCliente.resx">
+      <DependentUpon>frmConsultaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaProduto.resx">
+      <DependentUpon>frmConsultaProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaFornecedor.resx">
+      <DependentUpon>frmConsultaFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmRelatorios.resx">
+      <DependentUpon>frmRelatorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmPrevisaoVencimentoProduto.resx">
+      <DependentUpon>frmPrevisaoVencimentoProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaFuncionario.resx">
+      <DependentUpon>frmConsultaFuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaAdministrador.resx">
+      <DependentUpon>frmConsultaAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpBuscarServicosEmAndamento.resx">
+      <DependentUpon>frmPopUpBuscarServicosEmAndamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpVendasEmAberto.resx">
+      <DependentUpon>frmPopUpVendasEmAberto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principais\frmFuncionario.resx">
+      <DependentUpon>frmFuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principais\frmVendas.resx">
+      <DependentUpon>frmVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principais\frmAdministrador.resx">
+      <DependentUpon>frmAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principais\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmNovoServico.resx">
+      <DependentUpon>frmNovoServico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpBuscarServicos.resx">
+      <DependentUpon>frmPopUpBuscarServicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpBuscarFuncionario.resx">
+      <DependentUpon>frmPopUpBuscarFuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpBuscarProduto.resx">
+      <DependentUpon>frmPopUpBuscarProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpBuscaCliente.resx">
+      <DependentUpon>frmPopUpBuscaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principais\frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpBuscaFornecedor.resx">
+      <DependentUpon>frmPopUpBuscaFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\frmPopUpBuscarAnimal.resx">
+      <DependentUpon>frmPopUpBuscarAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagens\Logo-Petshop.png" />
+    <Content Include="Logo-Petshop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
